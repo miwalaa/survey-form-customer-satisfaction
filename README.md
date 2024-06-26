@@ -6,4 +6,4 @@ This project part of freeCodeCamp curriculum
 
 **Live Demo**: [https://survey-form-customer-satisfaction.vercel.app/]
 
-![https://photos.app.goo.gl/EVqzCpRXeAHcovx79](customer-satisfaction-survey-screenshot.png)
+
