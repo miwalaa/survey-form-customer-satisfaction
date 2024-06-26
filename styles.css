@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap');
+
+*, 
+*::before, 
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  background: #004643;
+  color: #001e1d;
+  font-family: "Poppins", sans-serif;
+  justify-content: center;
+}
+
+/* Container */
+div.container {
+  background: #abd1c6;
+  border-radius: .5em;
+  overflow: hidden;
+}
+/* Header */
+.header {
+  text-align: center;
+  background: #e16162;
+  color: #fffffe;
+  padding: .5em 1em;
+  font-size: 1em;
+}
+
+h1 {
+  margin-top: .3em;
+  margin-bottom: .3em;
+  font-weight: bold;
+  font-family: sans-serif;
+  font-size: 1.5em;
+  line-height: 1em;
+}
+
+p {
+  margin: 0;
+}
+
+/* Form */
+form {
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+}
+
+button {
+  padding: 0.4em 1.3em;
+  font-size: 1.3em;
+  color: #001e1d;
+  background: #f9bc60;
+  border-radius: 0 auto;
+  display: block;
+}
+
+label, button, p.label {
+  font-family: cursive;
+}
+
+input, select, textarea {
+  background: #fffffe;
+}
+
+input, textarea, select {
+  font-size: 1em;
+  padding: 10px 5px;
+  border-radius: 2px;
+}
+
+input[type="text"], input[type="email"] {
+  flex: 0 1 250px;
+}
+
+input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+input[type="number"] {
+  margin-left: 3%;
+  width: 70%;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+
+/* Rate Scale */
+.small-row {
+  display: flex;
+  align-items: center;
+  padding: 3px;
+}
+
+.justify-sb {
+  justify-content: space-between;
+}
+
+.rating {
+  border: 1px #999 solid;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row-reverse;
+  background: linear-gradient(to right, #f00, #ff0, #0f0)
+}
+
+.rating input {
+  display: none;
+}
+
+.rating label {
+  display: flex;
+  width: 50px;
+  height: 50px;
+  justify-content: center;
+  font-size: 12px;
+  align-items: center;
+  background: #fff;
+  color: #000;
+  cursor: pointer;
+
+  border-left: 1px #999 solid;
+  transition: .3s;
+}
+
+.rating input[type="radio"]:hover~label, input[type="radio"]:checked~label {
+  background: none;
+  color: #fff;
+}
+
+.m-t-20 {
+  margin-top: 20px;
+}
+
+textarea {
+  width: 100%;
+}
