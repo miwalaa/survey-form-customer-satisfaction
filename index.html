@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Satisfaction Survey</title>
+    <!-- CSS Link -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Container -->
+    <div class="container">
+        <div class="header">
+            <h1 id="title">Customer Satisfaction Survey</h1>
+            <p id="description">Please, let us know what to do you think about our service</p>
+        </div>
+        <!-- Form -->
+        <form id="survey-form">
+            <!-- Name -->
+            <div class="row">
+                <label for="name" class="wide" id="name-label">Name:</label>
+                <input type="text" id="name" placeholder="Your Name" required>
+            </div>
+            <!-- Email -->
+            <div class="row">
+                <label for="email" class="wide" id="email-label">Email:</label>
+                <input type="email" id="email" placeholder="Your Email" required>
+            </div>
+            <!-- Age -->
+            <div class="row">
+                <label for="number" class="wide" id="number-label">Age:</label>
+                <input type="number" id="number" min="13" max="120" placeholder="Your Age">
+            </div>
+            <!-- Role -->
+            <div class="row">
+                <label class="wide" for="dropdown">Which option best describes your current role?:</label>
+                <select id="drowdown">
+                    <option disabled selected value>Select current role</option>
+                    <option value="student">Student</option>
+                    <option value="job">Full Time Job</option>
+                    <option value="learner">Full Time Learner</option>
+                    <option value="preferNo">Prefer not to say</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+            <!-- Find Us -->
+            <div class="row">
+                <label class="wide" for="dropdown">How did you find us?:</label>
+                <select id="dropdown">
+                    <option value="google">Google</option>
+                    <option value="facebook">Facebook</option>
+                    <option value="tiktok">TikTok</option>
+                    <option value="youtube">YouTube</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+            <!-- Service -->
+            <div class="row">
+                <p class="label">Which services did you use?:</p>
+            </div>
+            <div class="small-row">
+                <input type="checkbox" value="web-design-service" name="services">
+                <label for="web-design-service">Web Design</label>
+            </div>
+            <div class="small-row">
+                <input type="checkbox" value="seo-service" name="services">
+                <label for="seo-service">Seo Optimization</label>
+            </div>
+            <div class="small-row">
+                <input type="checkbox" value="app-service" name="services">
+                <label for="app-service">App Development</label>
+            </div>
+            <!-- Scale Rate -->
+            <div class="row m-t-20">
+                <p class="label">How likely are you to recommend us to a friend?</p>
+            </div>
+            <div class="small-row justify-sb">
+                <p>Not at all likely</p>
+                <p>Extremely likely</p>
+            </div>
+
+            <div class="rating">
+                <input type="radio" name="rating" id="rate10" value="rating10"><label for="rate10">10</label>
+                <input type="radio" name="rating" id="rate9" value="rating9"><label for="rate9">9</label>
+                <input type="radio" name="rating" id="rate8" value="rating8"><label for="rate8">8</label>
+                <input type="radio" name="rating" id="rate7" value="rating7"><label for="rate7">7</label>
+                <input type="radio" name="rating" id="rate6" value="rating6"><label for="rate6">6</label>
+                <input type="radio" name="rating" id="rate5" value="rating5"><label for="rate5">5</label>
+                <input type="radio" name="rating" id="rate4" value="rating4"><label for="rate4">4</label>
+                <input type="radio" name="rating" id="rate3" value="rating3"><label for="rate3">3</label>
+                <input type="radio" name="rating" id="rate2" value="rating2"><label for="rate2">2</label>
+                <input type="radio" name="rating" id="rate1" value="rating1" checked><label for="rate1" >1</label>
+            </div>
+            <!-- Additional Comments -->
+            <div class="row m-t-20">
+                <label for="comments">Any additional comments?</label>
+            </div>
+
+            <div class="row">
+                <textarea rows="6" id="comments" placeholder="Write your comments here..."></textarea>
+            </div>
+            <!-- Submit Button -->
+            <div class="row">
+                <button id="submit" type="submit">Submit</button>
+            </div>
+
+
+        </form>
+    </div>
+</body>
+</html>
