@@ -4,4 +4,4 @@
 
 This project part of freeCodeCamp curriculum
 
-**Live Demo**: [www.https://miwalaa.github.survey-form-customer-satisfaction]
+**Live Demo**: [https://survey-form-customer-satisfaction.vercel.app/]
